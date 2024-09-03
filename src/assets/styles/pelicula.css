@@ -1,0 +1,114 @@
+
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+    gap: 10px;
+}
+.card {
+    width: 320px;
+    background-color: #222;
+    color: rgb(241, 241, 241);
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+.card-title {
+    /* font-size: 1.1rem;
+    margin-bottom: 10px; */
+
+     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;/* Ajusta el tamaño según tus necesidades */
+    color: #ffffff;
+}
+.card-text  {
+    font-size: 0.9rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: justify;
+    color: #b3b3b3;
+}
+
+.text-color{
+    color: white;
+}
+
+.btn-watch {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    width: 6rem;
+    transition: background-color 0.3s;
+}
+.btn-watch:hover {
+    background-color: #f40612;
+}
+
+
+/* spiner */
+
+/* Estilo de la animación de carga tipo Netflix */
+.netflix-loader {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.netflix-loader::before {
+    content: "";
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #e50914;
+    border-right-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+.netflix-loader::after {
+    content: "";
+    box-sizing: border-box;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    border: 6px solid #e50914;
+    border-left-color: transparent;
+    animation: spin 1s linear infinite reverse;
+    position: absolute;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
+    font-size: 1.5rem;
+    color: #e50914;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+}
