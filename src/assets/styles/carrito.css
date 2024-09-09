@@ -1,17 +1,14 @@
-
-
-
 .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
    
-    gap: 10px;
+    gap: 100px;
 }
 .card {
     width: 320px;
     background-color: #222;
-    color: rgb(241, 241, 241);
+    color: rgb(0, 0, 0);
     border: none;
     transition: transform 0.3s, box-shadow 0.3s;
 }

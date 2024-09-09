@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import '../assets/styles/clima.css'
 
 import { climaService } from '../service/ClimaService';
+
 export const Clima = () => {
+
+   
 
     const [paisT, setPaisT] = useState('argentina')
     const [pais, setPais] = useState(paisT)
@@ -11,7 +14,10 @@ export const Clima = () => {
     const difKelvin = 273.15;
     console.log(dataClima);
 
+   
 
+
+  
 
     const handleImput = (e) => {
         setPaisT(e.target.value)

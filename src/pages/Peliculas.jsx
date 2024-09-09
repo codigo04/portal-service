@@ -10,6 +10,7 @@ export const Peliculas = () => {
   const [pelicula, setPelicula] = useState(peliculaT);
 
   const { dataPelicula, isLoading, error } = peliculasService(pelicula);
+  
   console.log(dataPelicula)
   const handleImput = (e) => {
     console.log(e.target.value)
